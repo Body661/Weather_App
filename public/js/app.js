@@ -10,7 +10,7 @@ const request = async (place) => {
         return msg1.innerHTML = data.error
     }
     msg1.innerHTML = data.placeName + ' :'
-    weatherP.innerHTML = `${data.termprature} , ${data.forecast} `
+    weatherP.innerHTML = `${data.forecast}, It's currently ${data.temprature} out. It feels like ${data.feelsLike}℃ out. The humidity is ${data.humidity}% period`
 }
 
 const weatherForm = document.querySelector('form')

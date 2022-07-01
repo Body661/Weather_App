@@ -62,7 +62,9 @@ app.get('/weather', (req, res) => {
             res.send({
                 placeName,
                 forecast: body.weather_descriptions[0],
-                termprature: ` ${body.temperature}℃`
+                temprature: ` ${body.temperature}℃`,
+                humidity: body.humidity,
+                feelsLike: body.feelslike
             })
         })
     })
